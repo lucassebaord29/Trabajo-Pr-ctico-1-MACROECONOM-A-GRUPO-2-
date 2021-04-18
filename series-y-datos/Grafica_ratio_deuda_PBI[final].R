@@ -23,7 +23,7 @@ df_wider %>%
   geom_line(size=1)+
   geom_point()+
   ylab('%')+
-  ggtitle("Ratio Deuda/PBI", "Evolución del Ratio Deuda/PBI en %")+
+  ggtitle("Ratio Deuda/PBI", "EvoluciÃ³n del Ratio Deuda/PBI en %")+
   theme_hc()+
   scale_x_continuous(breaks = unique(df_wider$Periodo))+
   theme(legend.title = element_blank())

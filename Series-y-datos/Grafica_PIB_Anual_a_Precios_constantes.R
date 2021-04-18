@@ -15,12 +15,12 @@ view(df)
 ###replicando tidyverse####
 
 df %>% 
-  ggplot(aes(x=Período, y= `PIB medido en millones de pesos a precios constantes`, color = "PIB a Precios Constantes-2004"))+
+  ggplot(aes(x=PerÃ­odo, y= `PIB medido en millones de pesos a precios constantes`, color = "PIB a Precios Constantes-2004"))+
   geom_line(size=1)+
   geom_point(size = 2)+
   ylab('PIB a precios constantes (en millones de pesos 2004)')+
   ggtitle("PIB Anual a Precios constantes", 
-          "Evolución del PIB Anual 2004-2020 en pesos a precios constantes 2004 ")+
+          "EvoluciÃ³n del PIB Anual 2004-2020 en pesos a precios constantes 2004 ")+
   theme_hc()+
   scale_x_continuous(breaks = seq(2004,2020,2))+
   scale_y_continuous(labels = scales :: dollar, breaks = seq(0,700000,50000))+
